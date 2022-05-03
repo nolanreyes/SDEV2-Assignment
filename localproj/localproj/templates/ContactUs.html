@@ -1,0 +1,207 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/686bef32b8.js" crossorigin="anonymous"></script>
+
+
+      <!-- Search Bar -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars-staggered" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>{% trans "Menu" %}</header>
+      <a href="/"><i class="fa-solid fa-link"></i><span>{% trans "Home"%}</span></a>
+
+      <a href="/hotel"><i class="fa-solid fa-link"></i><span>{% trans "Hotel"%}</span></a>
+
+      <a href="/Flights"><i class="fa-solid fa-eye"></i><span>{% trans "Flights"%}</span></a>
+
+      <a href="/Tours"><i class="fa-solid fa-calendar"></i><span>{% trans "Tours"%}</span></a>
+
+      <a href="/ContactUs"><i class="fa-solid fa-circle-question"></i><span>{% trans "Contact Us"%}</span></a>
+    </div>
+
+    <!-- Heading -->
+    <div class="indexHeading">
+            <h2>{% trans "Travel.com"%}</h2>
+        </div>
+
+    <div class="Container">
+    <h1>{% trans "Contact us" %}</h1>
+    <p>{% trans "Need to get in touch with us?" %}<br>{% trans "Feel free to fill out the form:" %}</p>
+    <div class="contact-box">
+      <div class="contact-left"><h3>{% trans "Send your request" %}</h3>
+        <form onsubmit="sendEmail(); reset(); return() false;">
+        <div class="input-row">
+          <div class="input-group">
+            <label>{% trans "Name" %}</label>
+            <input type="text" placeholder="Junhan">
+          </div>
+          <div class="input-group">
+            <label>{% trans "Phone" %}</label>
+            <input type="text" placeholder="0000000000">
+          </div>
+        </div>
+          <div class="input-row">
+          <div class="input-group">
+            <label>{% trans "Email" %}</label>
+            <input type="email" placeholder="xxx@mail.com">
+          </div>
+            <div class="input-group">
+            <label>{% trans "Subject" %}</label>
+            <input type="text" placeholder=".......">
+          </div>
+        </div>
+
+          <label>{% trans "Message" %}</label>
+          <textarea rows="5" placeholder="{% trans 'Your Message'%}"></textarea>
+          <button type="submit">{% trans "Send" %}</button>
+
+        </form>
+      </div>
+
+
+
+      <div class="contact-right"><h3>{% trans "Reach us" %}</h3>
+        <table onsubmit="sendEmail(); reset(); return() false;">
+          <tr>
+            <td><i class="fa-solid fa-envelope"></i>{% trans "Email" %}</td>
+            <td>contact@example.com</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-phone"></i>{% trans "Phone" %}</td>
+            <td>0000000000</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-map-location"></i>{% trans "Address" %}</td>
+            <td>#address for the company<br>somewhere,layout,Road,</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+
+    <style>
+    body{
+    background-blend-mode:darken
+    font-size:14px;
+    }
+    .Container{
+    width: 80%;
+    margin: 50px auto;
+    }
+
+    .contact-box{
+    background:#EBEDF0;
+    display:flex;
+    }
+    .contact-left{
+    flex-basis:60%;
+    padding:40px 60px;
+    }
+    .contact-right{
+    flex-basis:40%;
+    padding:40px;
+    background:#007BFF;
+    color: #fff;
+    }
+    h1{
+    margin-bottom:10px;
+    }
+    .Container p{
+    margin-bottom:40px;
+    }
+    .input-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+    }
+    .input-row .input-group{
+    flex-basis:45%;
+    }
+    input{
+    width:100%;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline:none;
+    padding-bottom:5px;
+    background-color: #EBEDF0;
+    color: white;
+    }
+
+    textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+    }
+    label{
+    margin-bottom:6px;
+    display:block;
+    color:#007BFF;
+    }
+    button{
+    background:#007BFF;
+    width:100px;
+    border:none;
+    outline:none;
+    color:#fff;
+    height:35px;
+    border-radius:30px;
+    margin-top:20px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+    }
+    .contact-left h3{
+    color: #007BFF;
+    font-weight:600;
+    margin-bottom:30px;
+    }
+    .contact-right h3{
+    font-weight:600;
+    margin-bottom:30px;
+    }
+    tr td:first-child{
+    padding:20px;
+    }
+
+
+  </style>
+
+    <div id="footer-wrap">
+    <footer id="footer">{% trans '&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang 2022 || Languages: English <a href="url">English</a> | Spanish <a href="url">Español</a> | Chinese <a href="url">中文</a>' %}</footer>
+</div>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+</html>

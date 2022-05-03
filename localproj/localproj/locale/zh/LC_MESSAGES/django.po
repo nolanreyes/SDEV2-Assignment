@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 19:47+0000\n"
+"PO-Revision-Date: 2022-05-03 20:48+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: Travel/views.py:9
+msgid "Welcome to language translation"
+msgstr "欢迎来到语言翻译"
+
+#: localproj/settings.py:121
+msgid "Spanish"
+msgstr "西班牙语"
+
+#: localproj/settings.py:122
+msgid "Chinese"
+msgstr "中国人"
+
+#: localproj/settings.py:123
+msgid "Hindi"
+msgstr "印地语"
+
+#: localproj/settings.py:124
+msgid "English"
+msgstr "英语"
+
+#: localproj/templates/ContactUs.html:39 localproj/templates/Flights.html:39
+#: localproj/templates/Tours.html:39 localproj/templates/hotel.html:39
+#: localproj/templates/index.html:39
+msgid "Menu"
+msgstr "菜单"
+
+#: localproj/templates/ContactUs.html:40 localproj/templates/Flights.html:40
+#: localproj/templates/Tours.html:40 localproj/templates/hotel.html:40
+#: localproj/templates/index.html:40
+msgid "Home"
+msgstr "家"
+
+#: localproj/templates/ContactUs.html:42 localproj/templates/Flights.html:42
+#: localproj/templates/Tours.html:42 localproj/templates/hotel.html:42
+#: localproj/templates/index.html:42
+msgid "Hotel"
+msgstr "酒店"
+
+#: localproj/templates/ContactUs.html:44 localproj/templates/Flights.html:44
+#: localproj/templates/Tours.html:44 localproj/templates/hotel.html:44
+#: localproj/templates/index.html:44
+msgid "Flights"
+msgstr "航班"
+
+#: localproj/templates/ContactUs.html:46 localproj/templates/Flights.html:46
+#: localproj/templates/Tours.html:46 localproj/templates/hotel.html:46
+#: localproj/templates/index.html:46
+msgid "Tours"
+msgstr "旅游"
+
+#: localproj/templates/ContactUs.html:48 localproj/templates/Flights.html:48
+#: localproj/templates/Tours.html:48 localproj/templates/hotel.html:48
+#: localproj/templates/index.html:48
+msgid "Contact Us"
+msgstr "联系我们"
+
+#: localproj/templates/ContactUs.html:53 localproj/templates/Flights.html:53
+#: localproj/templates/Tours.html:53 localproj/templates/hotel.html:53
+#: localproj/templates/index.html:53
+msgid "Travel.com"
+msgstr ""
+
+#: localproj/templates/ContactUs.html:57
+msgid "Contact us"
+msgstr "联系我们"
+
+#: localproj/templates/ContactUs.html:58
+msgid "Need to get in touch with us?"
+msgstr "需要与我们取得联系？"
+
+#: localproj/templates/ContactUs.html:58
+msgid "Feel free to fill out the form:"
+msgstr "随意填写表格："
+
+#: localproj/templates/ContactUs.html:60
+msgid "Send your request"
+msgstr "发送您的请求"
+
+#: localproj/templates/ContactUs.html:64
+msgid "Name"
+msgstr "姓名"
+
+#: localproj/templates/ContactUs.html:68 localproj/templates/ContactUs.html:99
+msgid "Phone"
+msgstr "电话"
+
+#: localproj/templates/ContactUs.html:74 localproj/templates/ContactUs.html:95
+msgid "Email"
+msgstr "电子邮件"
+
+#: localproj/templates/ContactUs.html:78
+msgid "Subject"
+msgstr "学科"
+
+#: localproj/templates/ContactUs.html:83
+msgid "Message"
+msgstr "信息"
+
+#: localproj/templates/ContactUs.html:84
+msgid "Your Message"
+msgstr "你的信息"
+
+#: localproj/templates/ContactUs.html:85
+msgid "Send"
+msgstr "发送"
+
+#: localproj/templates/ContactUs.html:92
+msgid "Reach us"
+msgstr "联系我们"
+
+#: localproj/templates/ContactUs.html:103
+msgid "Address"
+msgstr "地址"
+
+#: localproj/templates/ContactUs.html:201 localproj/templates/Flights.html:237
+#: localproj/templates/Tours.html:158 localproj/templates/hotel.html:456
+#: localproj/templates/index.html:93
+msgid ""
+"&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang "
+"2022 || Languages: English <a href=\"url\">English</a> | Spanish <a href="
+"\"url\">Español</a> | Chinese <a href=\"url\">中文</a>"
+msgstr ""
+"&copy; travel.com || 由 Dylan Nolan & Junhan Dang 设计和开发 2022 || 语言：英"
+"语 <a href=“url”>English</a> | 西班牙语 <a href=“url”>Español</a> | 中文 <a "
+"href=“url”>中文</a>"
+
+#: localproj/templates/Flights.html:58
+msgid "Airline Booking form"
+msgstr "航空公司预订表格"
+
+#: localproj/templates/Flights.html:60
+msgid "Booking Details"
+msgstr "预订详情"
+
+#: localproj/templates/Flights.html:63
+msgid "From"
+msgstr "从"
+
+#: localproj/templates/Flights.html:64
+msgid "To"
+msgstr "到"
+
+#: localproj/templates/Flights.html:66
+msgid "Airline"
+msgstr "航空公司"
+
+#: localproj/templates/Flights.html:72
+msgid "Class"
+msgstr "类"
+
+#: localproj/templates/Flights.html:73
+msgid "Economy class"
+msgstr "经济舱"
+
+#: localproj/templates/Flights.html:74
+msgid "Business class"
+msgstr "商务课程"
+
+#: localproj/templates/Flights.html:75
+msgid "First class"
+msgstr "头等舱"
+
+#: localproj/templates/Flights.html:82
+msgid "Adult"
+msgstr "成人"
+
+#: localproj/templates/Flights.html:83
+msgid "Child"
+msgstr "孩子"
+
+#: localproj/templates/Flights.html:84
+msgid "infant"
+msgstr "婴儿"
+
+#: localproj/templates/Flights.html:89
+msgid "Select your Fare"
+msgstr "选择您的票价"
+
+#: localproj/templates/Flights.html:91
+msgid "One way"
+msgstr "单程"
+
+#: localproj/templates/Flights.html:93
+msgid "Round Trip"
+msgstr "往返"
+
+#: localproj/templates/Flights.html:97
+msgid "Return Date"
+msgstr "归期"
+
+#: localproj/templates/Flights.html:98
+msgid "Return Time"
+msgstr "返回时间"
+
+#: localproj/templates/Flights.html:99
+msgid "Any Message"
+msgstr "任何消息"
+
+#: localproj/templates/Flights.html:103
+msgid "Personal Details"
+msgstr "个人资料"
+
+#: localproj/templates/Flights.html:107
+msgid "Full name"
+msgstr "全名"
+
+#: localproj/templates/Flights.html:108
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: localproj/templates/Flights.html:109
+msgid "Full Email"
+msgstr "完整的电子邮件"
+
+#: localproj/templates/Tours.html:63 localproj/templates/index.html:63
+msgid "Search Hotels, Flights and Activities"
+msgstr "搜索酒店、航班和活动"
+
+#: localproj/templates/Tours.html:87
+msgid "Arc de Triomphe Tour"
+msgstr "凯旋门之旅"
+
+#: localproj/templates/Tours.html:88 localproj/templates/Tours.html:98
+#: localproj/templates/Tours.html:108 localproj/templates/Tours.html:120
+#: localproj/templates/Tours.html:130 localproj/templates/Tours.html:140
+msgid "from €29.99"
+msgstr "29.99 欧元起"
+
+#: localproj/templates/Tours.html:97
+msgid "Eiffel Tower Tour"
+msgstr "埃菲尔铁塔之旅"
+
+#: localproj/templates/Tours.html:107
+msgid "Louvre Museum Tour"
+msgstr "卢浮宫博物馆之旅"
+
+#: localproj/templates/Tours.html:119
+msgid "River Seine Tour"
+msgstr "塞纳河之旅"
+
+#: localproj/templates/Tours.html:129
+msgid "Notre Dame Tour"
+msgstr "巴黎圣母院之旅"
+
+#: localproj/templates/Tours.html:139
+msgid "Catacombs Tour"
+msgstr "地下墓穴之旅"
+
+#: localproj/templates/hotel.html:60
+msgid "Hello"
+msgstr "你好"
+
+#: localproj/templates/hotel.html:62
+msgid "More Info"
+msgstr "更多信息"
+
+#: localproj/templates/hotel.html:81
+msgid "Check in:"
+msgstr "报到："
+
+#: localproj/templates/hotel.html:86
+msgid "Check out:"
+msgstr "查看："
+
+#: localproj/templates/hotel.html:91
+msgid "Adults:"
+msgstr "成年人："
+
+#: localproj/templates/hotel.html:95
+msgid "Children:"
+msgstr "孩子们："
+
+#: localproj/templates/hotel.html:114 localproj/templates/hotel.html:129
+#: localproj/templates/hotel.html:144 localproj/templates/hotel.html:166
+msgid "RAISING COMFORT TO THE HIGHEST LEVEL"
+msgstr "将舒适度提升至最高水平"
+
+#: localproj/templates/hotel.html:115
+msgid "Welcome to Paris Hotel"
+msgstr "欢迎来到巴黎酒店"
+
+#: localproj/templates/hotel.html:130
+msgid "ROOM AND SUITES"
+msgstr "客房和套房"
+
+#: localproj/templates/hotel.html:133
+msgid "VIEW ALL"
+msgstr "查看全部"
+
+#: localproj/templates/hotel.html:145
+msgid "Room Description"
+msgstr "房间描述"
+
+#: localproj/templates/hotel.html:167
+msgid "Welcome to our Restaurant"
+msgstr "欢迎来到我们的餐厅"
+
+#: localproj/templates/index.html:88
+msgid ""
+"Paris is one of the most beautiful cities in the world. It is known "
+"worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. "
+"It has a reputation of being a romantic and cultural city. The city is also "
+"known for its high-quality gastronomy and the terraces of its cafés."
+msgstr ""
+"巴黎是世界上最美丽的城市之一。 它以卢浮宫、巴黎圣母院和埃菲尔铁塔而闻名于"
+"世。 它有浪漫和文化之城的美誉。 这座城市还以其高品质的美食和咖啡馆的露台而闻"
+"名。"

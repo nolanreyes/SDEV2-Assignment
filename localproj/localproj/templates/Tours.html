@@ -1,0 +1,160 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/686bef32b8.js" crossorigin="anonymous"></script>
+
+
+      <!-- Search Bar -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars-staggered" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>{% trans "Menu" %}</header>
+      <a href="/"><i class="fa-solid fa-link"></i><span>{% trans "Home"%}</span></a>
+
+      <a href="/hotel"><i class="fa-solid fa-link"></i><span>{% trans "Hotel"%}</span></a>
+
+      <a href="/Flights"><i class="fa-solid fa-eye"></i><span>{% trans "Flights"%}</span></a>
+
+      <a href="/Tours"><i class="fa-solid fa-calendar"></i><span>{% trans "Tours"%}</span></a>
+
+      <a href="/ContactUs"><i class="fa-solid fa-circle-question"></i><span>{% trans "Contact Us"%}</span></a>
+    </div>
+
+    <!-- Heading -->
+    <div class="indexHeading">
+            <h2>{% trans "Travel.com"%}</h2>
+        </div>
+
+
+
+
+    <!-- Search Bar -->
+    <div class="wrapper">
+	<div class="search_box_wrap">
+		<div class="search_box">
+			<input type="text" name="search" placeholder="{% trans 'Search Hotels, Flights and Activities' %}" class="input_search">
+		</div>
+		<div class="search_btn">
+			<span class="icon">
+				<ion-icon name="search-outline"></ion-icon>
+			</span>
+		</div>
+		<div class="close_btn">
+			<span class="icon">
+				<ion-icon name="close-outline"></ion-icon>
+			</span>
+		</div>
+	</div>
+</div>
+
+    <div class="contentTours">
+        <div class="toursContent">
+        <div class="tourCards">
+        <div class="tourInfo">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/arc_de_triomphe.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "Arc de Triomphe Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/france-paris-eiffel-tower.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "Eiffel Tower Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/Louvre-Museum.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "Louvre Museum Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/seineTour.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "River Seine Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/notreDame.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "Notre Dame Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="{% static 'assets/catacombs.jpg'%}">
+                        <div class="container">
+                            <h2>{% trans "Catacombs Tour" %}</h2>
+                            <p class="tourTitle">{% trans "from €29.99" %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+
+
+    </div>
+    <!-- JavaScript -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+
+
+<div id="footer-wrap">
+    <footer id="footer">{% trans '&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang 2022 || Languages: English <a href="url">English</a> | Spanish <a href="url">Español</a> | Chinese <a href="url">中文</a>' %}</footer>
+</div>
+</html>

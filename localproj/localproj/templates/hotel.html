@@ -1,0 +1,458 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/686bef32b8.js" crossorigin="anonymous"></script>
+
+
+      <!-- Search Bar -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars-staggered" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>{% trans "Menu" %}</header>
+      <a href="/"><i class="fa-solid fa-link"></i><span>{% trans "Home"%}</span></a>
+
+      <a href="/hotel"><i class="fa-solid fa-link"></i><span>{% trans "Hotel"%}</span></a>
+
+      <a href="/Flights"><i class="fa-solid fa-eye"></i><span>{% trans "Flights"%}</span></a>
+
+      <a href="/Tours"><i class="fa-solid fa-calendar"></i><span>{% trans "Tours"%}</span></a>
+
+      <a href="/ContactUs"><i class="fa-solid fa-circle-question"></i><span>{% trans "Contact Us"%}</span></a>
+    </div>
+
+    <!-- Heading -->
+    <div class="indexHeading">
+            <h2>{% trans "Travel.com"%}</h2>
+        </div>
+
+    <section class="Home" id="Home">
+      <div class="Head-container">
+        <div class="Box">
+          <div class="Text">
+            <h1>{% trans "Hello" %}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button>{% trans "More Info" %}</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="{% static 'assets/parisHome2.jpg'%}" class="slide">
+        </div>
+        <div class="image-item">
+          <img src="{% static 'assets/parisHome2.jpg'%}" alt="" class="slide active" onclick="{% static 'assets/home1.jpg'%}">
+          <img src="{% static 'assets/home2.jpg'%}" alt="" class="slide" onclick="{% static 'assets/home2.jpg'%}">
+          <img src="{% static 'assets/home3.jpg'%}" alt="" class="slide" onclick="{% static 'assets/home3.jpg'%}">
+          <img src="{% static 'assets/parisHome.jpg'%}" alt="" class="slide" onclick="{% static 'assets/home4.jpg'%})">
+        </div>
+      </div>
+
+      <section class="Book">
+        <div class="Container flex">
+          <div class="input grid">
+            <div class="box10">
+
+              <label>{% trans "Check in:" %}</label>
+              <input type="date" placeholder="Check in date">
+            </div>
+            <div class="box10">
+
+              <label>{% trans "Check out:" %}</label>
+              <input type="date" placeholder="Check out date">
+            </div>
+
+            <div class="box10">
+              <label>{% trans "Adults:" %}</label>
+              <input type="number" placeholder="0">
+            </div>
+            <div class="box10">
+              <label>{% trans "Children:" %}</label>
+              <input type="number" placeholder="0">
+            </div>
+          </div>
+          <div class="Search">
+            <input type="" value="SEARCH">
+          </div>
+        </div>
+      </section>
+
+      <section class="About top" id="about">
+        <div class="Container flex">
+          <div class="left">
+            <div class="image10">
+              <img src="{% static 'assets/parisHome.jpg'%}" alt="" class="pic2">
+            </div>
+          </div>
+          <div class="right">
+            <div class="heading">
+              <h5>{% trans "RAISING COMFORT TO THE HIGHEST LEVEL" %} </h5>
+              <h2>{% trans "Welcome to Paris Hotel" %}</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <p>Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <botton class="btn10"></botton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="room top" id="room">
+        <div class="Head-container">
+          <div class="heading-top flex1">
+            <div class="heading">
+              <h5>{% trans "RAISING COMFORT TO THE HIGHEST LEVEL" %}</h5>
+              <h2>{% trans "ROOM AND SUITES" %}</h2>
+            </div>
+            <div class="button">
+              <button class="btn5">{% trans "VIEW ALL" %}</button>
+            </div>
+          </div>
+          <div class="content-grid">
+            <div class="box10">
+              <div class="img">
+                <img src="{% static 'assets/room1.jpg'%}" alt="">
+                <img src="{% static 'assets/room2.jpg'%}" alt="">
+                <img src="{% static 'assets/room3.jpg'%}" alt="">
+            </div>
+              <div class="heading">
+              <h5>{% trans "RAISING COMFORT TO THE HIGHEST LEVEL" %} </h5>
+              <h2>{% trans "Room Description" %} </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <p>Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <botton class="btn10"></botton>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="About restaurant" id="restaurant">
+        <div class="Container flex">
+          <div class="left">
+            <div class="image10">
+              <img src="{% static 'assets/re.jpg'%}" alt="" class="pic1" style="width: 80%;margin-left: 40px;">
+            </div>
+          </div>
+          <div class="right">
+            <div class="heading">
+              <h5>{% trans "RAISING COMFORT TO THE HIGHEST LEVEL" %} </h5>
+              <h2>{% trans "Welcome to our Restaurant" %}</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <p>Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+              <botton class="btn10"></botton>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <script>
+      function img(anything)(){
+        document.querySelector('.slide').src = anything;
+      }
+      function change(change){
+        const line = document.querySelector('.image');
+        line.style.background = change;
+      }
+    </script>
+
+    <style>
+
+
+      .Home .image img{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:100%;
+        height:120%;
+      }
+      .Home .Text{
+        max-width:50%;
+        color:White;
+        margin:20% 0 0 10%;
+      }
+      .Home h1{
+        font-size:70px;
+        font-weight:400;
+      }
+      .Home p{
+        font-weight:400;
+        line-height:25px;
+        font-family:sans-serif;
+        font-size:17px;
+        margin:50px 0 0 50px;
+      }
+      button{
+        padding:20px 40px;
+        background:none;
+        outline:none;
+        border:2px solid white;
+        border-radius:50%;
+        color:white;
+        margin-top:20px;
+      }
+      .Home button{
+      margin-left:50px;
+      }
+      .Home .image-item{
+      position:absolute;
+      top:20%;
+      right:20%;
+      display:flex;
+      flex-direction:column;
+      cursor:pointer;
+      }
+      .Home .image-item img{
+        width:140px;
+        height:94px;
+        margin:10px;
+        transition:0.5s;
+      }
+
+      .Home .image-item img.active{
+        border:2px solid white;
+      }
+
+      .Home .Box .Text{
+        position:relative;
+      }
+
+      .Home .Box .Text::after{
+        position:absolute;
+        content:'H';
+        font-size:500px;
+        top:-120%;
+        font-weight:bold;
+        opacity:0.1;
+      }
+
+
+      .flex{
+        display:flex;
+      }
+      .grid{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-gap:30px;
+      }
+
+      .Book{
+        margin:auto;
+        margin-top:5%;
+        width:80%;
+        height:20vh;
+        color:white;
+      }
+
+      .Book .input{
+        background:#242e5a;
+        padding:20px 20px 40px 20px;
+      }
+
+      .Book .Search{
+      background:#3f9cc1;
+      padding:20px;
+      }
+
+      input{
+        width:100%;
+        padding:15px;
+        border:2px solid rgba(255,255,255,0.1);
+        outline:none;
+        background:#263760;
+        margin-top:20px;
+        color:white;
+
+      }
+
+      ::placeholder{
+        color:white;
+      }
+
+      .Book .Search{
+      width:20%;
+      }
+
+      .Book .Search input{
+        background:none;
+        border:none;
+        font-weight:bold;
+        font-size:20px;
+        margin-top:40px;
+      }
+
+      .top{
+      margin-top:10%;
+      }
+
+      .mtop{
+      margin-top:5%;
+      }
+
+      .left, .right{
+        width:50%;
+      }
+
+      .about{
+      margin-bottom:50px;
+      }
+
+
+      .about .image10{
+      position:relative;
+      }
+
+      .image10 .pic1{
+        width:310px;
+        height:450px;
+        bottom:5px;
+      }
+      .image10 .pic2{
+        width:650px;
+        height:450px;
+        bottom:5px;
+      }
+
+      .heading{
+        position:relative;
+      }
+
+      .heading::after{
+      position:absolute;
+      top:0;
+      left:0;
+      content:'';
+      width:100px;
+      height:4px;
+      background:#C1B086
+      }
+
+      .heading h5{
+      font-size:400;
+      letter-spacing:2px;
+      padding-top:20px;
+      color:#5f5f5f;
+      }
+      .heading h2{
+      font-size:30px;
+      font-weight:400;
+      margin:20px 0 40px 0;
+      color:#222222;
+      }
+      .heading p{
+      margin-bottom:20px;
+      line-height:25px;
+      color:#5f5f5f;
+      margin:0 0 20px 50px;
+      }
+
+      .flex1{
+        display:flex;
+        justify-content:space-between;
+      }
+      .room. grid{
+        grid-temple-columns:repeat(3,1fr);
+      }
+      .room img{
+        margin-left: 30px;
+        width:30%;
+        height:30%;
+      }
+
+      .room .box10{
+        box-shadow:0 13px 43px 0 rgb(37 46 89/10%);
+
+       .restaurant{
+      margin-bottom:50px;
+      }
+
+
+      .restaurant .image10{
+      position:relative;
+      }
+
+      .image10 .pic1{
+        width:100%;
+        height:100%;
+        bottom:5px;
+      }
+
+      .heading{
+        position:relative;
+      }
+
+      .heading::after{
+      position:absolute;
+      top:0;
+      left:0;
+      content:'';
+      width:100px;
+      height:4px;
+       background:#C1B086
+      }
+
+      .heading h5{
+      font-size:400;
+      letter-spacing:2px;
+      padding-top:20px;
+      color:#5f5f5f;
+      }
+      .heading h2{
+      font-size:30px;
+      font-weight:400;
+      margin:20px 0 40px 0;
+      color:#222222;
+      }
+      .heading p{
+      margin-bottom:20px;
+      line-height:25px;
+      color:#5f5f5f;
+      margin:0 0 20px 50px;
+      }
+      }
+
+
+
+
+    </style>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+
+
+<div id="footer-wrap">
+    <footer id="footer">{% trans '&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang 2022 || Languages: English <a href="url">English</a> | Spanish <a href="url">Español</a> | Chinese <a href="url">中文</a>' %}</footer>
+</div>
+</html>

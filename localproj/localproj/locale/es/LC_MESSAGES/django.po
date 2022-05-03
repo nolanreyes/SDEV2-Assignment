@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 19:47+0000\n"
+"PO-Revision-Date: 2022-05-03 20:48+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: Travel/views.py:9
+msgid "Welcome to language translation"
+msgstr "Bienvenido a traducción de idiomas"
+
+#: localproj/settings.py:121
+msgid "Spanish"
+msgstr "Español"
+
+#: localproj/settings.py:122
+msgid "Chinese"
+msgstr "Chino"
+
+#: localproj/settings.py:123
+msgid "Hindi"
+msgstr "Hindi"
+
+#: localproj/settings.py:124
+msgid "English"
+msgstr "Inglés"
+
+#: localproj/templates/ContactUs.html:39 localproj/templates/Flights.html:39
+#: localproj/templates/Tours.html:39 localproj/templates/hotel.html:39
+#: localproj/templates/index.html:39
+msgid "Menu"
+msgstr "Menú"
+
+#: localproj/templates/ContactUs.html:40 localproj/templates/Flights.html:40
+#: localproj/templates/Tours.html:40 localproj/templates/hotel.html:40
+#: localproj/templates/index.html:40
+msgid "Home"
+msgstr "Inicio"
+
+#: localproj/templates/ContactUs.html:42 localproj/templates/Flights.html:42
+#: localproj/templates/Tours.html:42 localproj/templates/hotel.html:42
+#: localproj/templates/index.html:42
+msgid "Hotel"
+msgstr "Hotel"
+
+#: localproj/templates/ContactUs.html:44 localproj/templates/Flights.html:44
+#: localproj/templates/Tours.html:44 localproj/templates/hotel.html:44
+#: localproj/templates/index.html:44
+msgid "Flights"
+msgstr "Vuelos"
+
+#: localproj/templates/ContactUs.html:46 localproj/templates/Flights.html:46
+#: localproj/templates/Tours.html:46 localproj/templates/hotel.html:46
+#: localproj/templates/index.html:46
+msgid "Tours"
+msgstr "Excursiones"
+
+#: localproj/templates/ContactUs.html:48 localproj/templates/Flights.html:48
+#: localproj/templates/Tours.html:48 localproj/templates/hotel.html:48
+#: localproj/templates/index.html:48
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: localproj/templates/ContactUs.html:53 localproj/templates/Flights.html:53
+#: localproj/templates/Tours.html:53 localproj/templates/hotel.html:53
+#: localproj/templates/index.html:53
+msgid "Travel.com"
+msgstr ""
+
+#: localproj/templates/ContactUs.html:57
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#: localproj/templates/ContactUs.html:58
+msgid "Need to get in touch with us?"
+msgstr "¿Necesitas ponerte en contacto con nosotros?"
+
+#: localproj/templates/ContactUs.html:58
+msgid "Feel free to fill out the form:"
+msgstr "No dude en completar el formulario:"
+
+#: localproj/templates/ContactUs.html:60
+msgid "Send your request"
+msgstr "Envía tu solicitud"
+
+#: localproj/templates/ContactUs.html:64
+msgid "Name"
+msgstr "Nombre"
+
+#: localproj/templates/ContactUs.html:68 localproj/templates/ContactUs.html:99
+msgid "Phone"
+msgstr "Teléfono"
+
+#: localproj/templates/ContactUs.html:74 localproj/templates/ContactUs.html:95
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: localproj/templates/ContactUs.html:78
+msgid "Subject"
+msgstr "Asunto"
+
+#: localproj/templates/ContactUs.html:83
+msgid "Message"
+msgstr "Mensaje"
+
+#: localproj/templates/ContactUs.html:84
+msgid "Your Message"
+msgstr "Su mensaje"
+
+#: localproj/templates/ContactUs.html:85
+msgid "Send"
+msgstr "Enviar"
+
+#: localproj/templates/ContactUs.html:92
+msgid "Reach us"
+msgstr "Información de contacto"
+
+#: localproj/templates/ContactUs.html:103
+msgid "Address"
+msgstr "Dirección"
+
+#: localproj/templates/ContactUs.html:201 localproj/templates/Flights.html:237
+#: localproj/templates/Tours.html:158 localproj/templates/hotel.html:456
+#: localproj/templates/index.html:93
+msgid ""
+"&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang "
+"2022 || Languages: English <a href=\"url\">English</a> | Spanish <a href="
+"\"url\">Español</a> | Chinese <a href=\"url\">中文</a>"
+msgstr ""
+"&copy; travel.com || Diseñado y desarrollado por Dylan Nolan y Junhan Dang "
+"2022 || Idiomas: Inglés <a href=“url”>English</a> | Español <a "
+"href=“url”>Español</a> | Chino <a href=“url”>中文</a>"
+
+#: localproj/templates/Flights.html:58
+msgid "Airline Booking form"
+msgstr "Formulario de reserva de vuelo"
+
+#: localproj/templates/Flights.html:60
+msgid "Booking Details"
+msgstr "Detalles de la reserva"
+
+#: localproj/templates/Flights.html:63
+msgid "From"
+msgstr "Desde"
+
+#: localproj/templates/Flights.html:64
+msgid "To"
+msgstr "Para"
+
+#: localproj/templates/Flights.html:66
+msgid "Airline"
+msgstr "Aerolínea"
+
+#: localproj/templates/Flights.html:72
+msgid "Class"
+msgstr "Clase"
+
+#: localproj/templates/Flights.html:73
+msgid "Economy class"
+msgstr "Clase de economia"
+
+#: localproj/templates/Flights.html:74
+msgid "Business class"
+msgstr "Clase de negocios"
+
+#: localproj/templates/Flights.html:75
+msgid "First class"
+msgstr "Primera clase"
+
+#: localproj/templates/Flights.html:82
+msgid "Adult"
+msgstr "Adultos"
+
+#: localproj/templates/Flights.html:83
+msgid "Child"
+msgstr "Niños"
+
+#: localproj/templates/Flights.html:84
+msgid "infant"
+msgstr "infantil"
+
+#: localproj/templates/Flights.html:89
+msgid "Select your Fare"
+msgstr "Seleccione su tarifa"
+
+#: localproj/templates/Flights.html:91
+msgid "One way"
+msgstr "De ida"
+
+#: localproj/templates/Flights.html:93
+msgid "Round Trip"
+msgstr "De regreso"
+
+#: localproj/templates/Flights.html:97
+msgid "Return Date"
+msgstr "Fecha de regreso"
+
+#: localproj/templates/Flights.html:98
+msgid "Return Time"
+msgstr "Hora de regreso"
+
+#: localproj/templates/Flights.html:99
+msgid "Any Message"
+msgstr "Cualquier mensaje"
+
+#: localproj/templates/Flights.html:103
+msgid "Personal Details"
+msgstr "Detalles personales"
+
+#: localproj/templates/Flights.html:107
+msgid "Full name"
+msgstr "Nombre completo"
+
+#: localproj/templates/Flights.html:108
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+#: localproj/templates/Flights.html:109
+msgid "Full Email"
+msgstr "Correo electrónico completo"
+
+#: localproj/templates/Tours.html:63 localproj/templates/index.html:63
+msgid "Search Hotels, Flights and Activities"
+msgstr "Buscar hoteles, vuelos y actividades"
+
+#: localproj/templates/Tours.html:87
+msgid "Arc de Triomphe Tour"
+msgstr "Tour del Arco del Triunfo"
+
+#: localproj/templates/Tours.html:88 localproj/templates/Tours.html:98
+#: localproj/templates/Tours.html:108 localproj/templates/Tours.html:120
+#: localproj/templates/Tours.html:130 localproj/templates/Tours.html:140
+msgid "from €29.99"
+msgstr "desde 29,99 €"
+
+#: localproj/templates/Tours.html:97
+msgid "Eiffel Tower Tour"
+msgstr "Tour de la Torre Eiffel"
+
+#: localproj/templates/Tours.html:107
+msgid "Louvre Museum Tour"
+msgstr "Visita al Museo del Louvre"
+
+#: localproj/templates/Tours.html:119
+msgid "River Seine Tour"
+msgstr "Tour por el río Sena"
+
+#: localproj/templates/Tours.html:129
+msgid "Notre Dame Tour"
+msgstr "Tour de Notre-Dame"
+
+#: localproj/templates/Tours.html:139
+msgid "Catacombs Tour"
+msgstr "Tour de Catacumbas"
+
+#: localproj/templates/hotel.html:60
+msgid "Hello"
+msgstr "Hola"
+
+#: localproj/templates/hotel.html:62
+msgid "More Info"
+msgstr "Más información"
+
+#: localproj/templates/hotel.html:81
+msgid "Check in:"
+msgstr "Registrarse:"
+
+#: localproj/templates/hotel.html:86
+msgid "Check out:"
+msgstr "Salida:"
+
+#: localproj/templates/hotel.html:91
+msgid "Adults:"
+msgstr "Adultos:"
+
+#: localproj/templates/hotel.html:95
+msgid "Children:"
+msgstr "Niños:"
+
+#: localproj/templates/hotel.html:114 localproj/templates/hotel.html:129
+#: localproj/templates/hotel.html:144 localproj/templates/hotel.html:166
+msgid "RAISING COMFORT TO THE HIGHEST LEVEL"
+msgstr "ELEVAMOS EL CONFORT AL NIVEL MÁS ALTO"
+
+#: localproj/templates/hotel.html:115
+msgid "Welcome to Paris Hotel"
+msgstr "Bienvenido al hotel paris"
+
+#: localproj/templates/hotel.html:130
+msgid "ROOM AND SUITES"
+msgstr "HABITACIÓN Y SUITE"
+
+#: localproj/templates/hotel.html:133
+msgid "VIEW ALL"
+msgstr "VER TODO"
+
+#: localproj/templates/hotel.html:145
+msgid "Room Description"
+msgstr "Descripción de la habitación"
+
+#: localproj/templates/hotel.html:167
+msgid "Welcome to our Restaurant"
+msgstr "Bienvenido a nuestro restaurante"
+
+#: localproj/templates/index.html:88
+msgid ""
+"Paris is one of the most beautiful cities in the world. It is known "
+"worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. "
+"It has a reputation of being a romantic and cultural city. The city is also "
+"known for its high-quality gastronomy and the terraces of its cafés."
+msgstr ""
+"París es una de las ciudades más bellas del mundo. Es conocido mundialmente "
+"por el Museo del Louvre, la catedral de Notre-Dame y la torre Eiffel. Tiene "
+"fama de ser una ciudad romántica y cultural. La ciudad también es conocida "
+"por su gastronomía de alta calidad y las terrazas de sus cafeterías."

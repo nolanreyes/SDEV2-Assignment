@@ -1,0 +1,240 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/686bef32b8.js" crossorigin="anonymous"></script>
+
+
+      <!-- Search Bar -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fa-solid fa-bars-staggered" id="btn"></i>
+      <i class="fa-solid fa-xmark" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>{% trans "Menu" %}</header>
+      <a href="/"><i class="fa-solid fa-link"></i><span>{% trans "Home"%}</span></a>
+
+      <a href="/hotel"><i class="fa-solid fa-link"></i><span>{% trans "Hotel"%}</span></a>
+
+      <a href="/Flights"><i class="fa-solid fa-eye"></i><span>{% trans "Flights"%}</span></a>
+
+      <a href="/Tours"><i class="fa-solid fa-calendar"></i><span>{% trans "Tours"%}</span></a>
+
+      <a href="/ContactUs"><i class="fa-solid fa-circle-question"></i><span>{% trans "Contact Us"%}</span></a>
+    </div>
+
+    <!-- Heading -->
+    <div class="indexHeading">
+            <h2>{% trans "Travel.com"%}</h2>
+        </div>
+
+    <div class="Booking">
+      <form class="form-group">
+        <h1>{% trans "Airline Booking form" %}</h1>
+        <div id="form">
+          <h3 style="color:#FFFFFF;">{% trans "Booking Details" %}</h3>
+
+          <div id="input" style="margin-top: 25px;">
+          <input type="text" id="input-group" placeholder="{% trans 'From' %}">
+          <input type="text" id="input-group" placeholder="{% trans 'To' %}">
+            <select id="input-group">
+              <option value="">{% trans "Airline" %}</option>
+              <option value="">IndoGO</option>
+              <option value="">AirIndia</option>
+              <option value="">AirChina</option>
+            </select>
+            <select id="input-group">
+              <option value="">{% trans "Class" %}</option>
+              <option value="">{% trans "Economy class" %}</option>
+              <option value="">{% trans "Business class" %}</option>
+              <option value="">{% trans "First class" %}</option>
+            </select>
+
+
+          </div><!--input-->
+
+          <div id="input2" style="margin-top: 25px;">
+            <input  type="number" id="input-group" placeholder="{% trans 'Adult' %}">
+            <input  type="number" id="input-group" placeholder="{% trans 'Child' %}">
+            <input  type="number" id="input-group" placeholder="{% trans 'infant' %}">
+          </div>
+
+
+          <div id="input3" style="margin-top: 25px;">
+          <span id="input-group" class="text-primary" style="color:blue">{% trans "Select your Fare" %}</span>
+            <input type="radio" id="input-group" name="r">
+            <label for="input-group" style="color:white">{% trans "One way" %}</label>
+            <input type="radio" id="input-group" name="r">
+            <label for="input-group" style="color:white">{% trans "Round Trip" %}</label>
+          </div>
+
+          <div id="input4" style="margin-top: 25px;">
+            <input type="text" id="input-group" placeholder="{% trans 'Return Date' %}">
+            <input type="text" id="input-group" placeholder="{% trans 'Return Time' %}">
+            <input type="text" id="input-group1" placeholder="{% trans 'Any Message' %}">
+          </div>
+
+          <div id="input5" style="margin-top: 25px;">
+            <h3 style="color:white;">{% trans "Personal Details" %}</h3>
+          </div>
+
+          <div id="input6" style="margin-top: 25px;">
+            <input type="text" id="input-group" placeholder="{% trans 'Full name' %}">
+            <input type="number" id="input-group" placeholder="{% trans 'Phone Number' %}">
+            <input type="email" id="input-group1" placeholder="{% trans 'Full Email' %}">
+          </div>
+
+
+        </div>
+      </form>
+    </div>
+
+    <style>
+
+      hr{
+      border:none;
+      height:1px;
+      background:darkgray;
+      margin-top:5px;
+      margin-left:100px;
+      margin-right:100px;}
+
+      .form-group h1{
+      margin-top:15px;
+      margin-bottom:50px;
+      text-align:center;
+      }
+
+
+      #form{
+      background-color:darkgray;
+      height:500px;
+      width:800px;
+      margin:auto;
+      padding:20px;
+      opacity:0.7;
+      margin-bottom:50px;
+      }
+
+      #form h3{
+      border-bottom:2px solid #708090;
+      width:210px;
+      padding:5px;
+      }
+
+      ::placeholder{
+      color:white;
+      }
+
+      #input #input-group{
+      width:350px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+      #input2 #input-group{
+      width:230px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+      #input3 #input-group{
+      margin-top:10px;
+      margin-left:90px;
+      }
+      #input4 #input-group{
+      width:350px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+      #input4 #input-group1{
+      width:715px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+      #input5 h3{
+      border-bottom:2px solid #708090;
+      width:220px;
+      padding:5px;
+      }
+      #input6 #input-group{
+      width:300px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+      #input6 #input-group1{
+      width:715px;
+      margin:5px;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      outline:none;
+      background:transparent;
+      color:#fff;
+      border-bottom:2px solid #708090;
+      }
+
+    </style>
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+
+<div id="footer-wrap">
+    <footer id="footer">{% trans '&copy; travel.com || Designed and Developed by Dylan Nolan & Junhan Dang 2022 || Languages: English <a href="url">English</a> | Spanish <a href="url">Español</a> | Chinese <a href="url">中文</a>' %}</footer>
+</div>
+
+</html>
